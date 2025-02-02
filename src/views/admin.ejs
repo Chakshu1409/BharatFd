@@ -1,0 +1,12 @@
+<form action="/api/faqs" method="POST">
+    <label for="question">Question:</label>
+    <input type="text" name="question" id="question">
+    <label for="answer">Answer:</label>
+    <textarea name="answer" id="answer"></textarea>
+    <button type="submit">Create FAQ</button>
+    <!-- CKEditor script -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('answer');
+    </script>
+</form>
